@@ -60,6 +60,15 @@ const products = productResponse.data.reduce(
   }, {}
 );
 ```
+
+## My progects
+----
+| Name Progect  | Description | Link |
+|:------------- |:---------------:|:---------------:|
+| Bicycles      |  online bike shop  | [GitHub](https://github.com/kotovi4/bicycles) |
+| Way      |  travel agency  | [GitHub](https://github.com/kotovi4/monyakova_way) |
+| Pink |  photo application site  | [GitHub](https://github.com/kotovi4/1314303-pink-22) |
+| Keksobooking |  photo application site  | [GitHub](https://github.com/kotovi4/1314303-keksobooking-23) |
 ## Education
 ----
 * HTML-Academy
