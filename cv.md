@@ -25,6 +25,41 @@ I have been interested in the topic of creating websites and applications for a 
 - Figma
 - studying unit tests for Jest и Vue Test Utils
 
+## Code Example:
+----
+```
+let id = offerResponse.data.PRODUCTS
+.map((group) => group.items
+  .filter((item) => 'id' in item)
+  .map((item) => item.id))
+.flat();
+
+id = [...new Set(id)];
+
+if (id.length > 0) {
+const productResponse = await api.get('product.php', { params: { id } });
+const products = productResponse.data.reduce(
+  /**
+    * @param {Object} acc
+    * @param {{
+    *   ID: string,
+    *   NAME: string,
+    *   TEXT: string,
+    *   URL: string,
+    *   PICTURE: string,
+    * }} item
+    */
+  (acc, item) => {
+    acc[item.ID] = {
+      name: item.NAME,
+      text: item.TEXT,
+      url: item.URL,
+      picture: item.PICTURE,
+    };
+    return acc;
+  }, {}
+);
+```
 ## Education
 ----
 * HTML-Academy
