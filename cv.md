@@ -2,19 +2,15 @@
 ![my photo](avatar.jpeg)
 
 ## My contacts:
-----
-
 * **Phone:** +79502263735
 * **Email:** improverall-mm@gmail.com
 * **GitHub:** [@kotovi4](https://github.com/kotovi4)
 * **Discord:** Mariia M.(@kotovi4)
 
 ## About me:
-----
 I have been interested in the topic of creating websites and applications for a long time. As part of my work, I had to deal with the administration of the company's websites and I decided to delve deeper into the study of front-end development. I have completed the Frontend Developer course from HTML-Academy, completed several training projects and am currently working on a commercial project. My dream is to get into EPAM.
 
 ## My skills:
-----
 - HTML (BEM methodology, cross-browser and responsive layout)
 - CSS (Less/SASS, PostCSS, Preprocessor)
 - JavaScript
@@ -26,7 +22,6 @@ I have been interested in the topic of creating websites and applications for a 
 - studying unit tests for Jest и Vue Test Utils
 
 ## Code Example:
-----
 ```
 let id = offerResponse.data.PRODUCTS
 .map((group) => group.items
@@ -62,7 +57,6 @@ const products = productResponse.data.reduce(
 ```
 
 ## My progects
-----
 | Name Progect  | Description | Link |
 |:------------- |:---------------:|:---------------:|
 | Bicycles      |  online bike shop  | [GitHub](https://github.com/kotovi4/bicycles) |
@@ -70,7 +64,6 @@ const products = productResponse.data.reduce(
 | Pink |  photo application site  | [GitHub](https://github.com/kotovi4/1314303-pink-22) |
 | Keksobooking |  accommodation booking  | [GitHub](https://github.com/kotovi4/1314303-keksobooking-23) |
 ## Education
-----
 * HTML-Academy
     - HTML & CSS. Professional Website Codings and
     - HTML & CSS. Adaptive Website Codings and Automation
@@ -80,5 +73,4 @@ const products = productResponse.data.reduce(
     - JavaScript + React from Ivan Petrichenko
 
 ## Language
-----
 **English:** A1
