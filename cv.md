@@ -18,10 +18,19 @@ I have been interested in the topic of creating websites and applications for a 
 - HTML (BEM methodology, cross-browser and responsive layout)
 - CSS (Less/SASS, PostCSS, Preprocessor)
 - JavaScript
+- Vue.js
 - Git
 - Gulp
 - Webpack
 - Figma
-- Adobe Photoshop
-- Adobe Illustrator
-- изучаю юнит-тесты на Jest и Vue Test Utils
+- studying unit tests for Jest и Vue Test Utils
+
+## Education
+----
+* HTML-Academy
+    - HTML & CSS. Professional Website Codings and
+    - HTML & CSS. Adaptive Website Codings and Automation
+    - JavaScript. Professional Development of Web Interface
+    - Profession "Front-end Developer"
+* Udemy
+    - JavaScript + React from Ivan Petrichenko
