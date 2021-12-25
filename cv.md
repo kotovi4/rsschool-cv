@@ -68,7 +68,7 @@ const products = productResponse.data.reduce(
 | Bicycles      |  online bike shop  | [GitHub](https://github.com/kotovi4/bicycles) |
 | Way      |  travel agency  | [GitHub](https://github.com/kotovi4/monyakova_way) |
 | Pink |  photo application site  | [GitHub](https://github.com/kotovi4/1314303-pink-22) |
-| Keksobooking |  photo application site  | [GitHub](https://github.com/kotovi4/1314303-keksobooking-23) |
+| Keksobooking |  accommodation booking  | [GitHub](https://github.com/kotovi4/1314303-keksobooking-23) |
 ## Education
 ----
 * HTML-Academy
@@ -78,3 +78,7 @@ const products = productResponse.data.reduce(
     - Profession "Front-end Developer"
 * Udemy
     - JavaScript + React from Ivan Petrichenko
+
+## Language
+----
+**English:** A1
