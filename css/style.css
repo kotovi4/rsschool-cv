@@ -3,9 +3,10 @@
   --accent-color: #f2c100;
   --white: #ffffff;
   --gray: #f3f4f5;
-  --gray-light: rgba(255, 255, 255, 0.1);
-  --gray-dark: #343945;
-  --gray-darked: #2c323d;
+  --gray-10: rgba(255, 255, 255, 0.1);
+  --gray-15: #343945;
+  --gray-20: #2c323d;
+  --gray-25: #1e232c;
 }
 
 @font-face {
@@ -83,6 +84,7 @@ p {
 }
 
 a {
+  text-decoration: none;
   cursor: pointer;
 }
 
@@ -135,7 +137,7 @@ a {
 .column-left {
   width: 30%;
   color: var(--white);
-  background-color: var(--gray-darked);
+  background-color: var(--gray-20);
 }
 
 .avatar {
@@ -169,14 +171,14 @@ a {
 
 .contacts {
   padding: 35px 0;
-  background-color: var(--gray-dark);
+  background-color: var(--gray-15);
 }
 
 .contacts-title {
   margin-top: 0;
   padding-left: 50px;
   color: var(--accent-color);
-  background-color: var(--gray-light);
+  background-color: var(--gray-10);
 }
 
 .contacts-list {
@@ -190,6 +192,7 @@ a {
 }
 
 .contacts-item a {
+  text-decoration: revert;
   color: var(--white);
 }
 
@@ -199,14 +202,14 @@ a {
 
 .skills {
   padding: 0 0 35px 0;
-  background-color: var(--gray-darked);
+  background-color: var(--gray-20);
 }
 
 .skills-title  {
   margin-top: 0;
   padding-left: 50px;
   color: var(--accent-color);
-  background-color: var(--gray-light);
+  background-color: var(--gray-10);
 }
 
 .skills-list {
@@ -226,7 +229,7 @@ a {
   margin-top: 0;
   padding-left: 50px;
   color: var(--accent-color);
-  background-color: var(--gray-light);
+  background-color: var(--gray-10);
 }
 
 .education-list {
@@ -246,7 +249,7 @@ a {
 }
 
 .about-text {
-  margin: 0 50px;
+  margin: 30px 50px;
   font-size: 16px;
   line-height: 1.6;
 }
@@ -256,6 +259,46 @@ a {
   background-color: var(--accent-color);
 }
 
+.progects-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 20px;
+  padding: 0;
+  margin: 0 50px;
+  list-style: none;
+}
+
+.progects-card {
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+.progects-img {
+  width: 100%;
+}
+
 .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
   flex: 0 0 auto;
+  background-color: var(--gray-25);
+}
+
+.footer-developer,
+.footer-github,
+.footer-rsshool {
+  padding: 0 20px;
+  color: var(--white);
+}
+
+.footer-github {
+  display: flex;
+  align-items: center;
+}
+
+.footer-github span {
+  padding-left: 15px;
 }
