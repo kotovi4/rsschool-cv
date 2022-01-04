@@ -83,13 +83,18 @@ p {
 }
 
 a {
-  /* text-decoration: none; */
   cursor: pointer;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .nav-list {
@@ -106,6 +111,7 @@ a {
 .nav-link {
   padding: 0 20px;
   line-height: 50px;
+  text-decoration: none;
   color: var(--main-color);
   opacity: 0.7;
 
@@ -124,13 +130,12 @@ a {
 
 .column-right {
   width: 70%;
-  padding: 0 50px;
 }
 
 .column-left {
   width: 30%;
   color: var(--white);
-  background-color: var(--gray-dark);
+  background-color: var(--gray-darked);
 }
 
 .avatar {
@@ -147,7 +152,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 125px 0;
+  margin: 117px 50px;
 }
 
 .name-title {
@@ -163,12 +168,14 @@ a {
 }
 
 .contacts {
-  padding: 35px 0
+  padding: 35px 0;
+  background-color: var(--gray-dark);
 }
 
 .contacts-title {
   margin-top: 0;
   padding-left: 50px;
+  color: var(--accent-color);
   background-color: var(--gray-light);
 }
 
@@ -178,8 +185,7 @@ a {
   padding: 0 50px
 }
 
-.contacts-item {
-  font-size: 16px;
+.contacts-item:not(:last-child) {
   margin-bottom: 10px;
 }
 
@@ -192,39 +198,62 @@ a {
 }
 
 .skills {
-  padding: 35px 0;
+  padding: 0 0 35px 0;
   background-color: var(--gray-darked);
 }
 
 .skills-title  {
   margin-top: 0;
   padding-left: 50px;
+  color: var(--accent-color);
   background-color: var(--gray-light);
 }
 
 .skills-list {
-  list-style: none;
   margin: 0;
-  padding: 0 50px;
+  padding: 0 65px;
 }
 
-.skills-item {
-  font-size: 16px;
+.skills-item:not(:last-child) {
   margin-bottom: 10px;
 }
 
-.title {
-  font-size: 24px;
-  font-weight: 700;
-  text-transform: uppercase;
+.education {
+  padding: 35px 0;
+}
+
+.education-title {
+  margin-top: 0;
+  padding-left: 50px;
+  color: var(--accent-color);
+  background-color: var(--gray-light);
+}
+
+.education-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding: 0 50px;
+}
+
+.education-item:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .about-title {
+  padding-left: 30px;
   background-color: var(--accent-color);
 }
 
 .about-text {
+  margin: 0 50px;
   font-size: 16px;
+  line-height: 1.6;
+}
+
+.progects-title {
+  padding-left: 30px;
+  background-color: var(--accent-color);
 }
 
 .footer {
