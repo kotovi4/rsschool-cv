@@ -200,6 +200,28 @@ a {
   color: var(--accent-color);
 }
 
+.education {
+  padding: 35px 0;
+}
+
+.education-title {
+  margin-top: 0;
+  padding-left: 50px;
+  color: var(--accent-color);
+  background-color: var(--gray-10);
+}
+
+.education-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding: 0 50px;
+}
+
+.education-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 .skills {
   padding: 0 0 35px 0;
   background-color: var(--gray-20);
@@ -221,26 +243,15 @@ a {
   margin-bottom: 10px;
 }
 
-.education {
-  padding: 35px 0;
-}
-
-.education-title {
+.language-title {
   margin-top: 0;
   padding-left: 50px;
   color: var(--accent-color);
   background-color: var(--gray-10);
 }
 
-.education-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.language-text {
   padding: 0 50px;
-}
-
-.education-item:not(:last-child) {
-  margin-bottom: 20px;
 }
 
 .about-title {
