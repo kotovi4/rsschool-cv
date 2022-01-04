@@ -9,15 +9,15 @@
   <link rel="preload" href="./fonts/montserrat-medium.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="./fonts/montserrat-semibold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="./fonts/montserrat-bold.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
+<body >
   <header class="header">
-    <nav class="header-nav nav container">
+    <nav class="header-nav nav">
       <ul class="nav-list">
         <li class="nav-item">
-          <a href="#about-me" class="nav-link">About Me</a>
+          <a href="#about" class="nav-link">About Me</a>
         </li>
         <li class="nav-item">
           <a href="#skills" class="nav-link">Skills</a>
@@ -26,7 +26,7 @@
           <a href="#education" class="nav-link">Education</a>
         </li>
         <li class="nav-item">
-          <a href="#my-progect" class="nav-link">My progect</a>
+          <a href="#progect" class="nav-link">Progect</a>
         </li>
         <li class="nav-item">
           <a href="#contacts" class="nav-link">Contacts</a>
@@ -38,17 +38,34 @@
     </nav>
   </header>
   <main class="main">
-    <section class="profile container">
-      <div class="profile-right">
-        <h1 class="profile-title">Mariia Moniakova</h1>
-        <p class="profile-text">Front-end developer</p>
-      </div>
-      <div class="profile-left">
-        <img src="./assets/images/avatar.jpeg" alt="Avatar" width="200px" height="200px">
-      </div>
-    </section>
+    <div class="column-left">
+      <figure class="avatar">
+        <img src="./assets/images/avatar.jpeg" alt="Avatar">
+      </figure>
+      <section class="contacts" id="contacts">
+        <h2 class="contacts-title title">Contacts</h2>
+        <ul class="contacts-list">
+          <li class="contacts-item">Phone: <a href="tel:+79502263735">+79502263735</a></li>
+          <li class="contacts-item">Email: <a href="mailto:improverall-mm@gmail.com">improverall-mm@gmail.com</a></li>
+          <li class="contacts-item">GitHub: <a href="https://github.com/kotovi4">@kotovi4</a></li>
+          <li class="contacts-item">Location: Russia, St-Petersburg</li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="column-right">
+      <section class="name">
+        <h1 class="name-title">Mariia Moniakova</h1>
+        <p class="name-text">Junior Front-end developer</p>
+      </section>
+
+      <section class="about" id="about">
+        <h2 class="about-title title">About me</h2>
+        <p class="about-text">I have been interested in the topic of creating websites and applications for a long time. As part of my work, I had to deal with the administration of the company’s websites and I decided to delve deeper into the study of front-end development. I have completed the Frontend Developer course from HTML-Academy, completed several training projects and am currently working on a commercial project. My dream is to get into EPAM.</p>
+      </section>
+    </div>
   </main>
-  <footer class="container">
+  <footer class="footer">
     <div>
       <p>it's footer</p>
     </div>

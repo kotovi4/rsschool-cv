@@ -1,6 +1,10 @@
 :root {
   --main-color: #333333;
-  --hover-color: red;
+  --accent-color: #f2c100;
+  --white: #ffffff;
+  --gray: #f3f4f5;
+  --gray-light: rgba(255, 255, 255, 0.1);
+  --gray-dark: #343945;
 }
 
 @font-face {
@@ -56,29 +60,34 @@
 }
 
 html {
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth;
+  height: 100%; 
 }
 
 body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 0; 
   padding: 0;
-  min-height: 100vh;
+  min-height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 400;
 }
 
 p {
-  font-size: 24px;
+  font-size: 18px;
+  line-height: 1.5;
 }
 
 a {
-  text-decoration: none;
+  /* text-decoration: none; */
+  cursor: pointer;
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -88,27 +97,108 @@ a {
   align-items: center;
   flex-wrap: wrap;
   margin: 0;
-  padding: 0 50px;
+  padding: 0;
   list-style: none;
+  background-color: var(--gray);
 }
 
 .nav-link {
   padding: 0 20px;
   line-height: 50px;
-  color: var(--main-color)
+  color: var(--main-color);
+  opacity: 0.7;
 
 }  
-.nav-link:hover {
-  color: var(--hover-color);
+.nav-item:hover {
+  background-color: var(--accent-color);
   transition: .3s;
 }
 
-.profile {
+.main {
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  flex: 1 0 auto;
+}
+
+.column-right {
+  width: 70%;
   padding: 0 50px;
 }
 
-.profile-title {
+.column-left {
+  width: 30%;
+  color: var(--white);
+  background-color: var(--gray-dark);
+}
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.avatar img{
+  width: 100%;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 125px 0;
+}
+
+.name-title {
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 600;
+}
+
+.name-text {
+  margin: 0;
+  font-size: 20px;
+  opacity: 0.7;
+}
+
+.contacts-title {
+  padding-left: 50px;
+  background-color: var(--gray-light);
+}
+
+.contacts-list {
+  list-style: none;
+  margin: 0;
+  padding: 0 50px
+}
+
+.contacts-item {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.contacts-item a {
+  color: var(--white);
+}
+
+.contacts-item a:hover {
+  color: var(--accent-color);
+}
+
+.title {
+  font-size: 24px;
   font-weight: 700;
+  text-transform: uppercase;
+}
+
+.about-title {
+  background-color: var(--accent-color);
+}
+
+.about-text {
+  font-size: 16px;
+}
+
+.footer {
+  flex: 0 0 auto;
 }
