@@ -9,11 +9,12 @@
   <link rel="preload" href="./fonts/montserrat-medium.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="./fonts/montserrat-semibold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="./fonts/montserrat-bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="header container">
-    <nav class="header-nav nav">
+  <header class="header">
+    <nav class="header-nav nav container">
       <ul class="nav-list">
         <li class="nav-item">
           <a href="#about-me" class="nav-link">About Me</a>
@@ -36,10 +37,16 @@
       </ul>
     </nav>
   </header>
-  <main class="container">
-    <div>
-      <p>it's my CV</p>
-    </div>
+  <main class="main">
+    <section class="profile container">
+      <div class="profile-right">
+        <h1 class="profile-title">Mariia Moniakova</h1>
+        <p class="profile-text">Front-end developer</p>
+      </div>
+      <div class="profile-left">
+        <img src="./assets/images/avatar.jpeg" alt="Avatar" width="200px" height="200px">
+      </div>
+    </section>
   </main>
   <footer class="container">
     <div>
