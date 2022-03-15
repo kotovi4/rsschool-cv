@@ -1,0 +1,315 @@
+:root {
+  --main-color: #333333;
+  --accent-color: #f2c100;
+  --white: #ffffff;
+  --gray: #f3f4f5;
+  --gray-10: rgba(255, 255, 255, 0.1);
+  --gray-15: #343945;
+  --gray-20: #2c323d;
+  --gray-25: #1e232c;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src:
+    local("Montserrat"),
+    local("Montserrat-Regular"),
+    url("../fonts/montserrat-regular.woff2") format("woff2"),
+    url("../font/montserrat-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src:
+    local("Montserrat Medium"),
+    local("Montserrat-Medium"),
+    url("../fonts/montserrat-medium.woff2") format("woff2"),
+    url("../fonts/montserrat-medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src:
+    local("Montserrat SemiBold"),
+    local("Montserrat-SemiBold"),
+    url("../fonts/montserrat-semibold.woff2") format("woff2"),
+    url("../fonts/montserrat-semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src:
+    local("Montserrat Bold"),
+    local("Montserrat-Bold"),
+    url("../fonts/montserrat-bold.woff2") format("woff2"),
+    url("../fonts/montserrat-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%; 
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+  min-height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 400;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: var(--gray);
+}
+
+.nav-link {
+  padding: 0 20px;
+  line-height: 50px;
+  text-decoration: none;
+  color: var(--main-color);
+  opacity: 0.7;
+
+}  
+.nav-item:hover {
+  background-color: var(--accent-color);
+  transition: .3s;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex: 1 0 auto;
+}
+
+.column-right {
+  width: 70%;
+}
+
+.column-left {
+  width: 30%;
+  color: var(--white);
+  background-color: var(--gray-20);
+}
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.avatar img{
+  width: 100%;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 117px 50px;
+}
+
+.name-title {
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 600;
+}
+
+.name-text {
+  margin: 0;
+  font-size: 20px;
+  opacity: 0.7;
+}
+
+.contacts {
+  padding: 35px 0;
+  background-color: var(--gray-15);
+}
+
+.contacts-title {
+  margin-top: 0;
+  padding-left: 50px;
+  color: var(--accent-color);
+  background-color: var(--gray-10);
+}
+
+.contacts-list {
+  list-style: none;
+  margin: 0;
+  padding: 0 50px
+}
+
+.contacts-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.contacts-item a {
+  text-decoration: revert;
+  color: var(--white);
+}
+
+.contacts-item a:hover {
+  color: var(--accent-color);
+}
+
+.education {
+  padding: 35px 0;
+}
+
+.education-title {
+  margin-top: 0;
+  padding-left: 50px;
+  color: var(--accent-color);
+  background-color: var(--gray-10);
+}
+
+.education-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding: 0 50px;
+}
+
+.education-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.skills {
+  padding: 0 0 35px 0;
+  background-color: var(--gray-20);
+}
+
+.skills-title  {
+  margin-top: 0;
+  padding-left: 50px;
+  color: var(--accent-color);
+  background-color: var(--gray-10);
+}
+
+.skills-list {
+  margin: 0;
+  padding: 0 65px;
+}
+
+.skills-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.language-title {
+  margin-top: 0;
+  padding-left: 50px;
+  color: var(--accent-color);
+  background-color: var(--gray-10);
+}
+
+.language-text {
+  padding: 0 50px;
+}
+
+.about-title {
+  padding-left: 30px;
+  background-color: var(--accent-color);
+}
+
+.about-text {
+  margin: 30px 50px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.progects-title {
+  padding-left: 30px;
+  background-color: var(--accent-color);
+}
+
+.progects-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 20px;
+  padding: 0;
+  margin: 0 50px;
+  list-style: none;
+}
+
+.progects-card {
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+.progects-img {
+  width: 100%;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  flex: 0 0 auto;
+  background-color: var(--gray-25);
+}
+
+.footer-developer,
+.footer-github,
+.footer-rsshool {
+  padding: 0 20px;
+  color: var(--white);
+}
+
+.footer-github {
+  display: flex;
+  align-items: center;
+}
+
+.footer-github span {
+  padding-left: 15px;
+}
