@@ -1,4 +1,4 @@
-# Mariia Moniakova
+# Maria Moniakova
 ![my photo](avatar.jpeg)
 
 ## My contacts:
@@ -61,6 +61,8 @@ const products = productResponse.data.reduce(
 * [Way](https://github.com/kotovi4/monyakova_way) - travel agency
 * [Pink](https://github.com/kotovi4/1314303-pink-22) - photo application site
 * [Keksobooking](https://github.com/kotovi4/1314303-keksobooking-23) - accommodation booking
+* [Smart Device](https://github.com/kotovi4/smart-device) - production and sale of printed circuit boards
+* [Jewellery](https://github.com/kotovi4/jewellery) - sale of jewelry
 ## Education
 * HTML-Academy
     - HTML & CSS. Professional Website Codings and
@@ -69,6 +71,5 @@ const products = productResponse.data.reduce(
     - Profession "Front-end Developer"
 * Udemy
     - JavaScript + React from Ivan Petrichenko
-
 ## Language
 **English:** A1
